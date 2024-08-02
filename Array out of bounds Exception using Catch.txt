@@ -1,0 +1,15 @@
+//Write a Java program to generate an ArrayIndexOutofBoundsException and handle it using catch statement
+
+
+public class Main {
+  public static void main(String[] args) {
+    try {
+      int arr[] = new int[10];
+
+      arr[10] = 100;
+    } catch (ArrayIndexOutOfBoundsException e) {
+      System.out.println("Exception: " + e);
+    }
+    System.out.println("Program Finished");
+  }
+}
